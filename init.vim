@@ -224,3 +224,6 @@ lua require("nvim-tree").setup()
 "
 " lua require('nvim-treesitter')
 lua require('plugin-config/nvim-treesitter')
+lua require('plugin-config/lualine')
+lua require('plugin-config/bufferline')
+lua require('keybinding')
