@@ -7,7 +7,7 @@ return require('packer').startup(function(use)
         requires = 'kyazdani42/nvim-web-devicons'
     }
   use 'SirVer/ultisnips'
-  use 'honza/vim-snippets'
+  use 'DYC1/vim-snippets'
   use 'arcticicestudio/nord-vim'
   use 'lervag/vimtex'
   use {
@@ -26,4 +26,10 @@ return require('packer').startup(function(use)
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+	}
 end)

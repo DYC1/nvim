@@ -1,7 +1,7 @@
 require'nvim-treesitter.configs'.setup {
   -- 安装 language parser
   -- :TSInstallInfo 命令查看支持的语言
-  ensure_installed = {"latex", "c", "cpp", "python", "html", "css", "vim", "lua", "javascript", "typescript", "tsx"},
+  ensure_installed = {"c", "cpp", "python", "html", "css", "vim", "lua", "javascript", "typescript", "tsx"},
   -- 启用代码高亮功能
   highlight = {
     enable = true,
@@ -14,7 +14,7 @@ require'nvim-treesitter.configs'.setup {
       init_selection = '<CR>',
       node_incremental = '<CR>',
       node_decremental = '<BS>',
-      scope_incremental = '<TAB>',
+      scope_incremental = '<C-TAB>',
     }
   },
   -- 启用基于Treesitter的代码格式化(=) . NOTE: This is an experimental feature.

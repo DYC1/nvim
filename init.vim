@@ -5,10 +5,6 @@ colorscheme nightfox
 "
 " lua require('plugin-config/nvim-tree')
 
-let g:UltiSnipsExpandTrigger       = '<Tab>'   
-let g:UltiSnipsJumpForwardTrigger  = '<Tab>'    
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-
 
 
 "set vimtex
@@ -227,3 +223,9 @@ lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/lualine')
 lua require('plugin-config/bufferline')
 lua require('keybinding')
+lua require('Comment').setup()
+let g:UltiSnipsExpandTrigger       = '<Tab>'   
+let g:UltiSnipsJumpForwardTrigger  = '<C-Tab>'    
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+
+
