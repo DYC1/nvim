@@ -23,9 +23,10 @@ let g:vimtex_toc_config = {
 \ 'show_help' : 1,
 \ 'show_numbers' : 1,
 \}
-
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set number
-
 "imap <silent><script><expr> <C-Tab> copilot#Accept("\<CR>")
 "let g:copilot_no_tab_map = v:true
 
