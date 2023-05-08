@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
   use 'DYC1/vim-snippets'
   use 'arcticicestudio/nord-vim'
   use 'lervag/vimtex'
+  use 'sainnhe/gruvbox-material'
   use {
  	  'neoclide/coc.nvim',
 	  branch='release'
